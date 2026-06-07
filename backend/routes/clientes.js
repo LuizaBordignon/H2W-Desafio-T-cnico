@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
   const { nome, email, telefone } = req.body;
 
   const nomeLimpo = nome?.trim();
-  const emailLimpo = email?.trim().toLowerCase();
+  const emailLimpo = email?.trim().toLowerCase(); 
   const telefoneLimpo = telefone?.trim().replace(/\D/g, '');
 
   if (!nomeLimpo || !emailLimpo || !telefoneLimpo) {
